@@ -1,0 +1,66 @@
+canvas {
+    border:3px solid #000;
+    padding-top: 0px;
+}
+
+.buttons {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:5px;
+}
+
+button {
+    padding:10px 20px;
+    margin:5px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:disabled {
+    background-color:#ccc;
+    cursor:not-allowed;
+}
+
+.center {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+body {
+    background-color:darkslategray;
+}
+
+
+.honk {
+    font-size:60px;
+    font-family: "Honk", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "MORF" 15,
+      "SHLN" 50;
+}
+.achievement {
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px 40px;
+    background-color: yellow;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 20px;
+    animation: flash 2s infinite;
+}
+
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
